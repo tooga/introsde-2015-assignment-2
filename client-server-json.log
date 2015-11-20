@@ -5,7 +5,7 @@ Request #1: GET /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
 => HTTP Status: 200
 [ {
   "idPerson" : 1,
-  "firstname" : "Goodlucky",
+  "firstname" : "Vladimir",
   "lastname" : "Luke",
   "birthdate" : "1965-02-12",
   "healthProfile" : {
@@ -67,7 +67,7 @@ Request #1: GET /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
       "mid" : 9,
       "created" : "2015-11-19",
       "measure" : "weight",
-      "value" : 72.0
+      "value" : 76.0
     } ]
   }
 }, {
@@ -121,7 +121,7 @@ Request #2: GET /person/1 Accept: APPLICATION/JSON Content-type: APPLICATION/JSO
 => HTTP Status: 200
 {
   "idPerson" : 1,
-  "firstname" : "Goodlucky",
+  "firstname" : "Vladimir",
   "lastname" : "Luke",
   "birthdate" : "1965-02-12",
   "healthProfile" : {
@@ -166,18 +166,18 @@ Request #4: POST /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
 => Result: OK
 => HTTP Status: 200
 {
-  "idPerson" : 11,
+  "idPerson" : 59,
   "firstname" : "Chuck",
   "lastname" : "Norris",
   "birthdate" : "1945-01-01",
   "healthProfile" : {
     "measureType" : [ {
-      "mid" : 23,
+      "mid" : 67,
       "created" : "2015-11-20",
       "measure" : "weight",
       "value" : 78.9
     }, {
-      "mid" : 24,
+      "mid" : 68,
       "created" : "2015-11-20",
       "measure" : "height",
       "value" : 172.0
@@ -185,11 +185,11 @@ Request #4: POST /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
   }
 }
 
-Request #5: DELETE /person/11 Accept: APPLICATION/JSON Content-type: NULL
+Request #5: DELETE /person/59 Accept: APPLICATION/JSON Content-type: NULL
 => Result: OK
 => HTTP Status: 204
 GET request response: 
-InboundJaxrsResponse{ClientResponse{method=GET, uri=http://introsde-assignment2.herokuapp.com/sdelab/person/11, status=404, reason=Not Found}}
+InboundJaxrsResponse{ClientResponse{method=GET, uri=http://introsde-assignment2.herokuapp.com/sdelab/person/59, status=404, reason=Not Found}}
 
 Request #9: GET /measureTypes Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
 => Result: OK
@@ -256,17 +256,17 @@ Request #8: POST /person/1/weight Accept: APPLICATION/JSON Content-type: APPLICA
 => Result: OK
 => HTTP Status: 200
 {
-  "mid" : 26,
+  "mid" : 70,
   "created" : "2011-12-09",
   "measure" : "weight",
   "value" : 72.0
 }
 
-Request #10: PUT /person/1/weight/26 Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+Request #10: PUT /person/1/weight/70 Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
 => Result: OK
 => HTTP Status: 200
 {
-  "mid" : 26,
+  "mid" : 70,
   "created" : "2011-12-09",
   "measure" : "weight",
   "value" : 90.0
@@ -306,6 +306,19 @@ Request #12: GET /person?measureType=weight&max=88&min=75 Accept: APPLICATION/JS
       "created" : "2012-08-13",
       "measure" : "height",
       "value" : 180.0
+    } ]
+  }
+}, {
+  "idPerson" : 4,
+  "firstname" : "Paul",
+  "lastname" : "Martin",
+  "birthdate" : "1980-12-11",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 9,
+      "created" : "2015-11-19",
+      "measure" : "weight",
+      "value" : 76.0
     } ]
   }
 } ]

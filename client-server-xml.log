@@ -6,7 +6,7 @@ Request #1: GET /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
 <people>
   <person>
     <idPerson>1</idPerson>
-    <firstname>Goodlucky</firstname>
+    <firstname>Vladimir</firstname>
     <lastname>Luke</lastname>
     <birthdate>1965-02-12</birthdate>
     <healthProfile>
@@ -74,7 +74,7 @@ Request #1: GET /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
         <mid>9</mid>
         <created>2015-11-19</created>
         <measure>weight</measure>
-        <value>72.0</value>
+        <value>76.0</value>
       </measureType>
     </healthProfile>
   </person>
@@ -134,7 +134,7 @@ Request #2: GET /person/1 Accept: APPLICATION/XML Content-type: APPLICATION/XML
 => HTTP Status: 200
 <person>
   <idPerson>1</idPerson>
-  <firstname>Goodlucky</firstname>
+  <firstname>Vladimir</firstname>
   <lastname>Luke</lastname>
   <birthdate>1965-02-12</birthdate>
   <healthProfile>
@@ -183,19 +183,19 @@ Request #4: POST /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200
 <person>
-  <idPerson>10</idPerson>
+  <idPerson>58</idPerson>
   <firstname>Chuck</firstname>
   <lastname>Norris</lastname>
   <birthdate>1945-01-01</birthdate>
   <healthProfile>
     <measureType>
-      <mid>21</mid>
+      <mid>65</mid>
       <created>2015-11-20</created>
       <measure>weight</measure>
       <value>78.9</value>
     </measureType>
     <measureType>
-      <mid>22</mid>
+      <mid>66</mid>
       <created>2015-11-20</created>
       <measure>height</measure>
       <value>172.0</value>
@@ -204,11 +204,11 @@ Request #4: POST /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
 </person>
 
 
-Request #5: DELETE /person/10 Accept: APPLICATION/XML Content-type: NULL
+Request #5: DELETE /person/58 Accept: APPLICATION/XML Content-type: NULL
 => Result: OK
 => HTTP Status: 204
 GET request response: 
-InboundJaxrsResponse{ClientResponse{method=GET, uri=http://introsde-assignment2.herokuapp.com/sdelab/person/10, status=404, reason=Not Found}}
+InboundJaxrsResponse{ClientResponse{method=GET, uri=http://introsde-assignment2.herokuapp.com/sdelab/person/58, status=404, reason=Not Found}}
 
 Request #9: GET /measureTypes Accept: APPLICATION/XML Content-type: APPLICATION/XML
 => Result: OK
@@ -296,18 +296,18 @@ Request #8: POST /person/1/weight Accept: APPLICATION/XML Content-type: APPLICAT
 => Result: OK
 => HTTP Status: 200
 <Measure>
-  <mid>25</mid>
+  <mid>69</mid>
   <created>2011-12-09</created>
   <measure>weight</measure>
   <value>72.0</value>
 </Measure>
 
 
-Request #10: PUT /person/1/weight/25 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+Request #10: PUT /person/1/weight/69 Accept: APPLICATION/XML Content-type: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200
 <Measure>
-  <mid>25</mid>
+  <mid>69</mid>
   <created>2011-12-09</created>
   <measure>weight</measure>
   <value>90.0</value>
@@ -354,6 +354,20 @@ Request #12: GET /person?measureType=weight&max=88&min=75 Accept: APPLICATION/XM
         <created>2012-08-13</created>
         <measure>height</measure>
         <value>180.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>4</idPerson>
+    <firstname>Paul</firstname>
+    <lastname>Martin</lastname>
+    <birthdate>1980-12-11</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>9</mid>
+        <created>2015-11-19</created>
+        <measure>weight</measure>
+        <value>76.0</value>
       </measureType>
     </healthProfile>
   </person>
