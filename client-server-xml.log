@@ -1,0 +1,527 @@
+Requesting from server running in: http://localhost:5700/sdelab
+
+Request #1: GET /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<people>
+  <person>
+    <idPerson>1</idPerson>
+    <firstname>Vladimir</firstname>
+    <lastname>Chan</lastname>
+    <birthdate>1965-02-12</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>3</mid>
+        <created>2012-08-13</created>
+        <measure>height</measure>
+        <value>180.0</value>
+      </measureType>
+      <measureType>
+        <mid>811</mid>
+        <created>2014-10-10</created>
+        <measure>weight</measure>
+        <value>75.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>2</idPerson>
+    <firstname>Chuck</firstname>
+    <lastname>Norris</lastname>
+    <birthdate>1945-01-10</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>2</mid>
+        <created>2012-05-10</created>
+        <measure>weight</measure>
+        <value>86.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>3</idPerson>
+    <firstname>Pappo</firstname>
+    <lastname>Pippo</lastname>
+    <birthdate>1960-10-10</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>4</mid>
+        <created>2013-12-29</created>
+        <measure>weight</measure>
+        <value>90.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>4</idPerson>
+    <firstname>Asdadaadsads</firstname>
+    <lastname>Wasdadasd</lastname>
+    <birthdate>1980-12-11</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>5</mid>
+        <created>2015-01-06</created>
+        <measure>height</measure>
+        <value>170.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>6</idPerson>
+    <firstname>Gulash</firstname>
+    <lastname>Galash</lastname>
+    <birthdate>1985-01-25</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>6</mid>
+        <created>2015-06-19</created>
+        <measure>height</measure>
+        <value>170.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>106</idPerson>
+    <firstname>ASdsadda</firstname>
+    <lastname>Asadads</lastname>
+    <birthdate>1992-02-20</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>7</mid>
+        <created>2014-10-18</created>
+        <measure>weight</measure>
+        <value>72.0</value>
+      </measureType>
+      <measureType>
+        <mid>8</mid>
+        <created>2015-09-09</created>
+        <measure>height</measure>
+        <value>180.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>107</idPerson>
+    <firstname>Testi</firstname>
+    <lastname>Testaaja</lastname>
+    <birthdate>1978-09-02</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>159</mid>
+        <created>2015-11-19</created>
+        <measure>weight</measure>
+        <value>72.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>841</idPerson>
+    <firstname>Chuck</firstname>
+    <lastname>Norris</lastname>
+    <birthdate>1945-01-01</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>1033</mid>
+        <created>2015-11-19</created>
+        <measure>weight</measure>
+        <value>78.9</value>
+      </measureType>
+      <measureType>
+        <mid>1034</mid>
+        <created>2015-11-19</created>
+        <measure>height</measure>
+        <value>172.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+  <person>
+    <idPerson>842</idPerson>
+    <firstname>Chuck</firstname>
+    <lastname>Norris</lastname>
+    <birthdate>1945-01-01</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>1035</mid>
+        <created>2015-11-19</created>
+        <measure>weight</measure>
+        <value>78.9</value>
+      </measureType>
+      <measureType>
+        <mid>1036</mid>
+        <created>2015-11-19</created>
+        <measure>height</measure>
+        <value>172.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+</people>
+
+
+Request #2: GET /person/1 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<person>
+  <idPerson>1</idPerson>
+  <firstname>Vladimir</firstname>
+  <lastname>Chan</lastname>
+  <birthdate>1965-02-12</birthdate>
+  <healthProfile>
+    <measureType>
+      <mid>3</mid>
+      <created>2012-08-13</created>
+      <measure>height</measure>
+      <value>180.0</value>
+    </measureType>
+    <measureType>
+      <mid>811</mid>
+      <created>2014-10-10</created>
+      <measure>weight</measure>
+      <value>75.0</value>
+    </measureType>
+  </healthProfile>
+</person>
+
+
+Request #3: PUT /person/1 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<person>
+  <idPerson>1</idPerson>
+  <firstname>Jackieee</firstname>
+  <lastname>Chan</lastname>
+  <birthdate>1965-02-12</birthdate>
+  <healthProfile>
+    <measureType>
+      <mid>3</mid>
+      <created>2012-08-13</created>
+      <measure>height</measure>
+      <value>180.0</value>
+    </measureType>
+    <measureType>
+      <mid>811</mid>
+      <created>2014-10-10</created>
+      <measure>weight</measure>
+      <value>75.0</value>
+    </measureType>
+  </healthProfile>
+</person>
+
+
+Request #4: POST /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<person>
+  <idPerson>869</idPerson>
+  <firstname>Chuck</firstname>
+  <lastname>Norris</lastname>
+  <birthdate>1945-01-01</birthdate>
+  <healthProfile>
+    <measureType>
+      <mid>1111</mid>
+      <created>2015-11-20</created>
+      <measure>weight</measure>
+      <value>78.9</value>
+    </measureType>
+    <measureType>
+      <mid>1112</mid>
+      <created>2015-11-20</created>
+      <measure>height</measure>
+      <value>172.0</value>
+    </measureType>
+  </healthProfile>
+</person>
+
+
+Request #5: DELETE /person/869 Accept: APPLICATION/XML Content-type: NULL
+=> Result: OK
+=> HTTP Status: 204
+GET request response: 
+InboundJaxrsResponse{ClientResponse{method=GET, uri=http://localhost:5700/sdelab/person/869, status=404, reason=Not Found}}
+
+Request #9: GET /measureTypes Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<measureTypes>
+  <measureType>
+    <measureName>weight</measureName>
+  </measureType>
+  <measureType>
+    <measureName>height</measureName>
+  </measureType>
+  <measureType>
+    <measureName>steps</measureName>
+  </measureType>
+</measureTypes>
+
+
+Request #6: GET /person/1/weight;/person/1/height;/person/1/steps;/person/842/weight;/person/842/height;/person/842/steps; Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<measures>
+  <Measure>
+    <mid>1</mid>
+    <created>2010-02-15</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>811</mid>
+    <created>2014-10-10</created>
+    <measure>weight</measure>
+    <value>75.0</value>
+  </Measure>
+  <Measure>
+    <mid>962</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>965</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>968</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>971</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1049</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>72.0</value>
+  </Measure>
+  <Measure>
+    <mid>1050</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>72.0</value>
+  </Measure>
+  <Measure>
+    <mid>1055</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1056</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1061</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1062</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1067</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1068</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1073</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1074</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1079</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1080</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1085</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1086</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1091</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1092</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1097</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1098</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1103</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1104</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1109</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+  <Measure>
+    <mid>1110</mid>
+    <created>2011-12-09</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+</measures>
+<measures>
+  <Measure>
+    <mid>3</mid>
+    <created>2012-08-13</created>
+    <measure>height</measure>
+    <value>180.0</value>
+  </Measure>
+</measures>
+<measures>
+  <Measure>
+    <mid>1035</mid>
+    <created>2015-11-19</created>
+    <measure>weight</measure>
+    <value>78.9</value>
+  </Measure>
+</measures>
+<measures>
+  <Measure>
+    <mid>1036</mid>
+    <created>2015-11-19</created>
+    <measure>height</measure>
+    <value>172.0</value>
+  </Measure>
+</measures>
+
+
+Request #7: GET /person/1/weight/1 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<Measure>
+  <mid>1</mid>
+  <created>2010-02-15</created>
+  <measure>weight</measure>
+  <value>90.0</value>
+</Measure>
+
+
+Request #8: POST /person/1/weight Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<Measure>
+  <mid>1115</mid>
+  <created>2011-12-09</created>
+  <measure>weight</measure>
+  <value>72.0</value>
+</Measure>
+
+
+Request #10: PUT /person/1/weight/1115 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<Measure>
+  <mid>1115</mid>
+  <created>2011-12-09</created>
+  <measure>weight</measure>
+  <value>90.0</value>
+</Measure>
+
+
+Request #11: GET /person/2/weight?before=2013-01-01&after=2010-01-01 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<measures>
+  <Measure>
+    <mid>2</mid>
+    <created>2012-05-10</created>
+    <measure>weight</measure>
+    <value>86.0</value>
+  </Measure>
+  <Measure>
+    <mid>810</mid>
+    <created>2011-10-10</created>
+    <measure>weight</measure>
+    <value>90.0</value>
+  </Measure>
+</measures>
+
+
+Request #12: GET /person?measureType=weight&max=90&min=80 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+=> Result: OK
+=> HTTP Status: 200
+<people>
+  <person>
+    <idPerson>2</idPerson>
+    <firstname>Chuck</firstname>
+    <lastname>Norris</lastname>
+    <birthdate>1945-01-10</birthdate>
+    <healthProfile>
+      <measureType>
+        <mid>2</mid>
+        <created>2012-05-10</created>
+        <measure>weight</measure>
+        <value>86.0</value>
+      </measureType>
+    </healthProfile>
+  </person>
+</people>
+

@@ -1,0 +1,452 @@
+Requesting from server running in: http://localhost:5700/sdelab
+
+Request #1: GET /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+[ {
+  "idPerson" : 1,
+  "firstname" : "Vladimir",
+  "lastname" : "Chan",
+  "birthdate" : "1965-02-12",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 3,
+      "created" : "2012-08-13",
+      "measure" : "height",
+      "value" : 180.0
+    }, {
+      "mid" : 811,
+      "created" : "2014-10-10",
+      "measure" : "weight",
+      "value" : 75.0
+    } ]
+  }
+}, {
+  "idPerson" : 2,
+  "firstname" : "Chuck",
+  "lastname" : "Norris",
+  "birthdate" : "1945-01-10",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 2,
+      "created" : "2012-05-10",
+      "measure" : "weight",
+      "value" : 86.0
+    } ]
+  }
+}, {
+  "idPerson" : 3,
+  "firstname" : "Pappo",
+  "lastname" : "Pippo",
+  "birthdate" : "1960-10-10",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 4,
+      "created" : "2013-12-29",
+      "measure" : "weight",
+      "value" : 90.0
+    } ]
+  }
+}, {
+  "idPerson" : 4,
+  "firstname" : "Asdadaadsads",
+  "lastname" : "Wasdadasd",
+  "birthdate" : "1980-12-11",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 5,
+      "created" : "2015-01-06",
+      "measure" : "height",
+      "value" : 170.0
+    } ]
+  }
+}, {
+  "idPerson" : 6,
+  "firstname" : "Gulash",
+  "lastname" : "Galash",
+  "birthdate" : "1985-01-25",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 6,
+      "created" : "2015-06-19",
+      "measure" : "height",
+      "value" : 170.0
+    } ]
+  }
+}, {
+  "idPerson" : 106,
+  "firstname" : "ASdsadda",
+  "lastname" : "Asadads",
+  "birthdate" : "1992-02-20",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 7,
+      "created" : "2014-10-18",
+      "measure" : "weight",
+      "value" : 72.0
+    }, {
+      "mid" : 8,
+      "created" : "2015-09-09",
+      "measure" : "height",
+      "value" : 180.0
+    } ]
+  }
+}, {
+  "idPerson" : 107,
+  "firstname" : "Testi",
+  "lastname" : "Testaaja",
+  "birthdate" : "1978-09-02",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 159,
+      "created" : "2015-11-19",
+      "measure" : "weight",
+      "value" : 72.0
+    } ]
+  }
+}, {
+  "idPerson" : 841,
+  "firstname" : "Chuck",
+  "lastname" : "Norris",
+  "birthdate" : "1945-01-01",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 1033,
+      "created" : "2015-11-19",
+      "measure" : "weight",
+      "value" : 78.9
+    }, {
+      "mid" : 1034,
+      "created" : "2015-11-19",
+      "measure" : "height",
+      "value" : 172.0
+    } ]
+  }
+}, {
+  "idPerson" : 842,
+  "firstname" : "Chuck",
+  "lastname" : "Norris",
+  "birthdate" : "1945-01-01",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 1035,
+      "created" : "2015-11-19",
+      "measure" : "weight",
+      "value" : 78.9
+    }, {
+      "mid" : 1036,
+      "created" : "2015-11-19",
+      "measure" : "height",
+      "value" : 172.0
+    } ]
+  }
+} ]
+
+Request #2: GET /person/1 Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+{
+  "idPerson" : 1,
+  "firstname" : "Vladimir",
+  "lastname" : "Chan",
+  "birthdate" : "1965-02-12",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 3,
+      "created" : "2012-08-13",
+      "measure" : "height",
+      "value" : 180.0
+    }, {
+      "mid" : 811,
+      "created" : "2014-10-10",
+      "measure" : "weight",
+      "value" : 75.0
+    } ]
+  }
+}
+
+Request #3: PUT /person/1 Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+{
+  "idPerson" : 1,
+  "firstname" : "Vladimir",
+  "lastname" : "Chan",
+  "birthdate" : "1965-02-12",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 3,
+      "created" : "2012-08-13",
+      "measure" : "height",
+      "value" : 180.0
+    }, {
+      "mid" : 811,
+      "created" : "2014-10-10",
+      "measure" : "weight",
+      "value" : 75.0
+    } ]
+  }
+}
+
+Request #4: POST /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+{
+  "idPerson" : 870,
+  "firstname" : "Chuck",
+  "lastname" : "Norris",
+  "birthdate" : "1945-01-01",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 1113,
+      "created" : "2015-11-20",
+      "measure" : "weight",
+      "value" : 78.9
+    }, {
+      "mid" : 1114,
+      "created" : "2015-11-20",
+      "measure" : "height",
+      "value" : 172.0
+    } ]
+  }
+}
+
+Request #5: DELETE /person/870 Accept: APPLICATION/JSON Content-type: NULL
+=> Result: OK
+=> HTTP Status: 204
+GET request response: 
+InboundJaxrsResponse{ClientResponse{method=GET, uri=http://localhost:5700/sdelab/person/870, status=404, reason=Not Found}}
+
+Request #9: GET /measureTypes Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+[ {
+  "measureName" : "weight"
+}, {
+  "measureName" : "height"
+}, {
+  "measureName" : "steps"
+} ]
+
+Request #6: GET /person/1/weight;/person/1/height;/person/1/steps;/person/842/weight;/person/842/height;/person/842/steps; Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+[ {
+  "mid" : 1,
+  "created" : "2010-02-15",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 811,
+  "created" : "2014-10-10",
+  "measure" : "weight",
+  "value" : 75.0
+}, {
+  "mid" : 962,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 965,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 968,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 971,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1049,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 72.0
+}, {
+  "mid" : 1050,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 72.0
+}, {
+  "mid" : 1055,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1056,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1061,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1062,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1067,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1068,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1073,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1074,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1079,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1080,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1085,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1086,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1091,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1092,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1097,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1098,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1103,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1104,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1109,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 1110,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+} ][ {
+  "mid" : 3,
+  "created" : "2012-08-13",
+  "measure" : "height",
+  "value" : 180.0
+} ][ {
+  "mid" : 1035,
+  "created" : "2015-11-19",
+  "measure" : "weight",
+  "value" : 78.9
+} ][ {
+  "mid" : 1036,
+  "created" : "2015-11-19",
+  "measure" : "height",
+  "value" : 172.0
+} ]
+
+Request #7: GET /person/1/weight/1 Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+{
+  "mid" : 1,
+  "created" : "2010-02-15",
+  "measure" : "weight",
+  "value" : 90.0
+}
+
+Request #8: POST /person/1/weight Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+{
+  "mid" : 1116,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 72.0
+}
+
+Request #10: PUT /person/1/weight/1116 Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+{
+  "mid" : 1116,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}
+
+Request #11: GET /person/2/weight?before=2013-01-01&after=2010-01-01 Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+[ {
+  "mid" : 2,
+  "created" : "2012-05-10",
+  "measure" : "weight",
+  "value" : 86.0
+}, {
+  "mid" : 810,
+  "created" : "2011-10-10",
+  "measure" : "weight",
+  "value" : 90.0
+} ]
+
+Request #12: GET /person?measureType=weight&max=90&min=80 Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+=> Result: OK
+=> HTTP Status: 200
+[ {
+  "idPerson" : 2,
+  "firstname" : "Chuck",
+  "lastname" : "Norris",
+  "birthdate" : "1945-01-10",
+  "healthProfile" : {
+    "measureType" : [ {
+      "mid" : 2,
+      "created" : "2012-05-10",
+      "measure" : "weight",
+      "value" : 86.0
+    } ]
+  }
+} ]
