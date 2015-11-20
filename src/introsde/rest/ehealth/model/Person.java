@@ -122,9 +122,9 @@ public class Person implements Serializable {
     			// Check that measuretype equals to the one in queryParam
     			if (measure.getMeasure().equals(measureType)) {
     				// Check that measure value is larger than min in queryParam
-    				if (min == 0 || measure.getValue() > min) {
+    				if (min == 0 || measure.getValue() >= min) {
     					// Check that measure value is smaller than max in queryParam
-    					if (max == 0 || measure.getValue() < max) {
+    					if (max == 0 || measure.getValue() <= max) {
     						// If all correct, add to list
     						filteredList.add(p);
     					}

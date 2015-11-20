@@ -813,10 +813,10 @@ public class MyClient {
     public void sendRequest11(WebTarget service) throws XPathExpressionException {
     	int requestNumber = 11;
     	String request = "GET";
-    	String path = "/person/2/weight";
+    	String path = "/person/2/height";
     	// Init queryParams and the full path of request
-    	String[] queryParam1 = { "before", "2013-01-01"};
-    	String[] queryParam2 = { "after", "2010-01-01"};
+    	String[] queryParam1 = { "before", "2015-10-10"};
+    	String[] queryParam2 = { "after", "2014-12-30"};
     	String fullPath = path + "?"+queryParam1[0]+"="+queryParam1[1]+"&"+queryParam2[0]+"="+queryParam2[1];
     	
     	// XML request
@@ -862,8 +862,8 @@ public class MyClient {
     	String path = "/person";
     	// Init queryParams and set full path of request
     	String[] queryParam1 = { "measureType", "weight"};
-    	String[] queryParam2 = { "max", "90"};
-    	String[] queryParam3 = { "min", "80"};
+    	String[] queryParam2 = { "max", "88"};
+    	String[] queryParam3 = { "min", "75"};
     	String fullPath = path + "?"+queryParam1[0]+"="+queryParam1[1]+"&"+queryParam2[0]+"="+queryParam2[1]+"&"+queryParam3[0]+"="+queryParam3[1];
     	
     	// XML request

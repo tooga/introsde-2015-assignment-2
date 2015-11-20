@@ -73,16 +73,21 @@
         </path>
 
         <!-- PART 3: compilation and execution targets for this session -->
+        <!-- target for init -->
         <target name="init" depends="resolve">
             <echo message="Init has been called" />
             <mkdir dir="${build.dir}" />
             <echo message="${build.dir} has been created" />
         </target>
+
+        <!-- target for cleaning project -->
         <target name="clean">
             <echo message="Clean has been called" />
             <delete dir="${build.dir}" />
             <echo message="${build.dir} has been deleted" />
         </target>
+
+        <!-- target for compiling -->
         <target name="install" depends="clean, init">
             <echo message="Compile target has been called" />
             <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="lib.path.id" includeAntRuntime="false">
@@ -100,7 +105,8 @@
                 </fileset>
             </copy>
         </target>
-        
+
+        <!-- target for starting server -->
         <target name="start">
             <echo message="app start introsde.rest.ehealth.App in ${build.dir}" />
             <java classname="introsde.rest.ehealth.App" classpath="${build.dir}" fork="true">
@@ -115,8 +121,8 @@
             </java>
         </target>
 
-        <!-- target for executing JSON marshalling -->
-        <target name="execute.client">
+        <!-- target for executing client -->
+        <target name="execute.client" depends="install">
             <echo message="Executing client..." />
             <java classname="introsde.rest.ehealth.client.MyClient" classpath="${build.dir}">
                 <classpath>
