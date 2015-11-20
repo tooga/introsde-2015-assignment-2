@@ -6,7 +6,7 @@ Request #1: GET /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
 <people>
   <person>
     <idPerson>1</idPerson>
-    <firstname>Vladimir</firstname>
+    <firstname>Lucky</firstname>
     <lastname>Luke</lastname>
     <birthdate>1965-02-12</birthdate>
     <healthProfile>
@@ -134,7 +134,7 @@ Request #2: GET /person/1 Accept: APPLICATION/XML Content-type: APPLICATION/XML
 => HTTP Status: 200
 <person>
   <idPerson>1</idPerson>
-  <firstname>Vladimir</firstname>
+  <firstname>Lucky</firstname>
   <lastname>Luke</lastname>
   <birthdate>1965-02-12</birthdate>
   <healthProfile>
@@ -183,19 +183,19 @@ Request #4: POST /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200
 <person>
-  <idPerson>58</idPerson>
+  <idPerson>8</idPerson>
   <firstname>Chuck</firstname>
   <lastname>Norris</lastname>
   <birthdate>1945-01-01</birthdate>
   <healthProfile>
     <measureType>
-      <mid>65</mid>
+      <mid>15</mid>
       <created>2015-11-20</created>
       <measure>weight</measure>
       <value>78.9</value>
     </measureType>
     <measureType>
-      <mid>66</mid>
+      <mid>16</mid>
       <created>2015-11-20</created>
       <measure>height</measure>
       <value>172.0</value>
@@ -204,11 +204,11 @@ Request #4: POST /person Accept: APPLICATION/XML Content-type: APPLICATION/XML
 </person>
 
 
-Request #5: DELETE /person/58 Accept: APPLICATION/XML Content-type: NULL
+Request #5: DELETE /person/8 Accept: APPLICATION/XML Content-type: NULL
 => Result: OK
 => HTTP Status: 204
 GET request response: 
-InboundJaxrsResponse{ClientResponse{method=GET, uri=http://introsde-assignment2.herokuapp.com/sdelab/person/58, status=404, reason=Not Found}}
+InboundJaxrsResponse{ClientResponse{method=GET, uri=http://introsde-assignment2.herokuapp.com/sdelab/person/8, status=404, reason=Not Found}}
 
 Request #9: GET /measureTypes Accept: APPLICATION/XML Content-type: APPLICATION/XML
 => Result: OK
@@ -241,18 +241,6 @@ Request #6: GET /person/1/weight;/person/1/height;/person/1/steps;/person/7/weig
     <created>2014-05-10</created>
     <measure>weight</measure>
     <value>86.0</value>
-  </Measure>
-  <Measure>
-    <mid>19</mid>
-    <created>2011-12-09</created>
-    <measure>weight</measure>
-    <value>90.0</value>
-  </Measure>
-  <Measure>
-    <mid>20</mid>
-    <created>2011-12-09</created>
-    <measure>weight</measure>
-    <value>90.0</value>
   </Measure>
 </measures>
 <measures>
@@ -296,18 +284,18 @@ Request #8: POST /person/1/weight Accept: APPLICATION/XML Content-type: APPLICAT
 => Result: OK
 => HTTP Status: 200
 <Measure>
-  <mid>69</mid>
+  <mid>19</mid>
   <created>2011-12-09</created>
   <measure>weight</measure>
   <value>72.0</value>
 </Measure>
 
 
-Request #10: PUT /person/1/weight/69 Accept: APPLICATION/XML Content-type: APPLICATION/XML
+Request #10: PUT /person/1/weight/19 Accept: APPLICATION/XML Content-type: APPLICATION/XML
 => Result: OK
 => HTTP Status: 200
 <Measure>
-  <mid>69</mid>
+  <mid>19</mid>
   <created>2011-12-09</created>
   <measure>weight</measure>
   <value>90.0</value>
