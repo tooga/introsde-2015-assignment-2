@@ -216,7 +216,7 @@ public class MyClient {
 		Element rootElement = doc.createElement("person");
 		doc.appendChild(rootElement);
 		
-		String newFirstname = "Jackieee";
+		String newFirstname = "Badlucky";
 		Element firstname = doc.createElement("firstname");
 		firstname.appendChild(doc.createTextNode(newFirstname));
 		rootElement.appendChild(firstname);
@@ -240,7 +240,7 @@ public class MyClient {
     	acceptType = "application/json";
     	
     	// Create JSON object
-    	newFirstname = "Vladimir";
+    	newFirstname = "Goodlucky";
     	JSONObject obj = new JSONObject();
     	obj.put("firstname", newFirstname);
     	
