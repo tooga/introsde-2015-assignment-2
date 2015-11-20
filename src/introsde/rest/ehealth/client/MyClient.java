@@ -1022,6 +1022,6 @@ public class MyClient {
      */
     private static URI getBaseURI() {
         return UriBuilder.fromUri(
-                "http://localhost:5700/sdelab").build();
+                "http://introsde-assignment2.herokuapp.com/sdelab").build();
     }
 }

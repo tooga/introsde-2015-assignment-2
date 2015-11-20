@@ -1,6 +1,6 @@
 {
   "name": "IntroSDE Assignment 2",
-  "description": "REST web service",
+  "description": "RESTful Services",
   "repository": "https://github.com/tooga/introsde-2015-assignment-2",
   "logo": "https://avatars0.githubusercontent.com/u/11249211?v=3&s=200",
   "image": "heroku/java",
@@ -8,7 +8,7 @@
     "BUILDPACK_URL": "https://github.com/IntroSDE/heroku-buildpack-ant.git",
     "HEROKU_URL": {
       "description": "The URL of this Heroku app.",
-      "value": "http://YOURAPPNAME.herokuapp.com"
+      "value": "http://introsde-assignment2.herokuapp.com"
     }
   } 
 }
