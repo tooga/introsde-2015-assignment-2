@@ -48,6 +48,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class MyClient {
 	// Variables that are used in requests
 	private XPath xpath;
+	
 	private String first_person_id;
 	private String last_person_id;
 	private String xml_created_person_id;
@@ -402,16 +403,14 @@ public class MyClient {
 
     	// Send get to see if deleted
     	Response result2 = service.path(path).request().accept(acceptType).get();
-    	
-    	// Save get response
-    	String getResponse = "GET request response: \n" +
-    							 result2.toString() + 
-    							 	"";
     	int getHttpCode = result2.getStatus();
+    	// Save get response
+    	String getResponse = "Request: GET " + path + ": \n" +
+    			"=> HTTP Status: "  + getHttpCode +
+    							 	"";
     	String status = getStatus(getHttpCode == 404);
     	
     	printRequest(requestNumber, request, path, acceptType, contentType, status, deleteHttpCode, getResponse);
-    	System.out.println("");
     	
     	// JSON request
     	path = "/person/"+json_created_person_id;
@@ -423,16 +422,14 @@ public class MyClient {
     	
     	// Send get to see if deleted
     	result2 = service.path(path).request().accept(acceptType).get();
-    	
-    	// Save get response
-    	getResponse = "GET request response: \n" +
-    							 result2.toString() + 
-    							 	"";
     	getHttpCode = result2.getStatus();
+    	// Save get response
+    	getResponse = "Request: GET " + path + ": \n" +
+    			"=> HTTP Status: "  + getHttpCode +
+    							 	"";
     	status = getStatus(getHttpCode == 404);
     	
     	printRequest(requestNumber, request, path, acceptType, contentType, status, deleteHttpCode, getResponse);
-    	System.out.println("");
     }
     
     /**
