@@ -1,9 +1,3 @@
-Create a Readme.md file in Github and add there 
-The name of the student with whom you worked in pair (otherwise write you worked alone)
-The URL of your server and server URL of the partner student
-Link to his/her Github repository
-
-
 ## Assignment 2 for Introduction to Service Design and Engineering -course of UNITN
 
 ### General info of the assignment
