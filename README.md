@@ -43,13 +43,13 @@ The server for my assignment is running in [https://introsde-assignment2.herokua
 ##### **PUT /person/{id}**
 - Update a person specified by id
 
-##### **/person/{id}/{measureType}/{mid}**
+##### **PUT /person/{id}/{measureType}/{mid}**
 - Update a measure specified by measure id, measure type and person id
 
 ##### **DELETE /person/{id}**
 - Delete a person specified by id
 
-### What this is about?
+### What this assignment is about?
 This assignment is about RESTful services. In the assignment I have created a REST service that is running on Heroku and a client that is making requests to the server.
 
 ### Folder and file structure
@@ -58,7 +58,7 @@ The root folder contains mainly setup and configuration files and the database f
 ### What do each file do?
 The ivy.xml and build.xml files in root folder are for installing all the dependencies and running the program. The lifecoach.sqlite is the database file and app.json and Procfile in root folder contains setups for Heroku. Log-files contains logs from client-server requests.
 
-The src-package contains all the java files. The introsde.rest.ehealth-package contains server configuration files, introsde.rest.ehealt.client contains the client, introsde.rest.ehealth.dao contains file for interacting with database, introsde.rest.ehealt.model contains the model files and introsde.rest.ehealth.resources contains the resource-handling -files for the uri paths.
+The src-package contains all the java files and persistence.xml-file for persistence units. The introsde.rest.ehealth-package contains server configuration files, introsde.rest.ehealt.client contains the client, introsde.rest.ehealth.dao contains file for interacting with database, introsde.rest.ehealt.model contains the model files and introsde.rest.ehealth.resources contains the resource-handling -files for the uri paths.
 
 ### How to run the program?
 The program uses ant build-tool for running the program. To execute the program, please open the terminal and run the following command in the root directory of the program:
