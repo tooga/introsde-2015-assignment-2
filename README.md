@@ -1,51 +1,53 @@
+Create a Readme.md file in Github and add there 
+The name of the student with whom you worked in pair (otherwise write you worked alone)
+The URL of your server and server URL of the partner student
+Link to his/her Github repository
+
+
 ## Assignment 2 for Introduction to Service Design and Engineering -course of UNITN
 
 ### General info of the assignment
 In the assignment I worked alone.
 The server for my assignment is running in [https://introsde-assignment2.herokuapp.com/sdelab](https://introsde-assignment2.herokuapp.com/sdelab)
 
-### Supported REST endpoints
-#### **GET**
-/person
+### Supported REST endpoints:
+
+##### **GET /person**
 - Get all persons
 
-/person/{id}
+##### **GET /person/{id}**
 - Get a person with its id
 
-/person/{id}/{measureType}
+##### **GET /person/{id}/{measureType}**
 - Get all the specified measures from a person specified with id
 
-/person/{id}/{measureType}/{mid}
+##### **GET /person/{id}/{measureType}/{mid}**
 - Get a single measure specified with measure id, measure type and person id
 
-/person?measureType={measureType}&min={min}&max={max}
+##### **GET /person?measureType={measureType}&min={min}&max={max}**
 - Return all persons that have measure that match [min,max] values
 
-/person/{id}/{measureType}?before={beforeDate}&after={afterDate}
+##### **GET /person/{id}/{measureType}?before={beforeDate}&after={afterDate}**
 - Return all measures of person specified by id that match the given before and after dates
 - date format: YYYY-MM-DD
 
-/measureTypes
+##### **GET /measureTypes**
 - Get all the measure types that are supported
 
-#### **POST**
-/person
+##### **POST /person**
 - Create a new person
 
-/person/{id}/{measureType}
+##### **POST /person/{id}/{measureType}**
 - Create a new measure for person specified by id
 
-#### **PUT**
-/person/{id}
+##### **PUT /person/{id}**
 - Update a person specified by id
 
-/person/{id}/{measureType}/{mid}
+##### **/person/{id}/{measureType}/{mid}**
 - Update a measure specified by measure id, measure type and person id
 
-#### **DELETE**
-/person/{id}
+##### **DELETE /person/{id}**
 - Delete a person specified by id
-
 
 ### What this is about?
 This assignment is about RESTful services. In the assignment I have created a REST service that is running on Heroku and a client that is making requests to the server.
