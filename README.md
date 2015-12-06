@@ -1,7 +1,7 @@
 ## Assignment 2 for Introduction to Service Design and Engineering -course of UNITN
 
 ### General info of the assignment
-In the assignment I worked alone.
+In the assignment I worked alone.  
 The server for my assignment is running in [https://introsde-assignment2.herokuapp.com/sdelab](https://introsde-assignment2.herokuapp.com/sdelab)
 
 ### Supported REST endpoints:
